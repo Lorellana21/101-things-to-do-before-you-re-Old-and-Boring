@@ -11,114 +11,115 @@ Proceso 2:
 - escuchar evento
 */
 
-const listElement = document.querySelector ('.js-list');
-
 const tasks = [
-    { name: 'Send a message in a bottle', completed: true },
-    { name: 'Run up an escalator the wrong way', completed: true },
-    { name: 'Make and origami crane', completed: true },
+    { name: 'Send a message in a bottle', completed: false },
+    { name: 'Run up an escalator the wrong way', completed: false },
+    { name: 'Make and origami crane', completed: false },
     {
       name: 'Learn how to tell when someone likes you (and when they don’t)',
       completed: false
     },
-    { name: 'Keep a dream diary', completed: true },
-    { name: 'Touch these creatures: Mouse, butterfly, worm, bird, spider, snake, frog, fish, bug', completed: true },
-    { name: 'Prepare yourself for fame', completed: true },
-    { name: 'Learn to play an instrument', completed: true },
-    { name: 'Play a computer game to the end', completed: true },
-    { name: 'Have an embarrassing moment and get over it', completed: true },
-    { name: 'Get your school involved in a world record attempt', completed: true },
-    { name: 'Paint a picture good enough to hang on a wall', completed: true },
-    { name: 'Learn to whistle', completed: true },
-    { name: 'See a ghost', completed: true },
-    { name: 'Fart and Burp in hilariously inappropriate places', completed: true },
-    { name: 'Make a swear box', completed: true },
-    { name: 'Act in a play', completed: true },
-    { name: 'Win Something', completed: true },
-    { name: 'Make a t-shirt', completed: true },
-    { name: 'Stay up all night', completed: true },
-    { name: 'Sleep all day', completed: true },
-    { name: 'Invent a secret code', completed: true },
-    { name: 'Learn to do a card trick', completed: true },
-    { name: 'Grow something from a seed', completed: true },
-    { name: 'Start a collection', completed: true },
-    { name: 'Help save the planet', completed: true },
-    { name: 'Turn back time', completed: true },
-    { name: 'Learn to do a party trick', completed: true },
-    { name: 'Climb to the top of a mountain', completed: true },
-    { name: 'Make a one-minute movie', completed: true },
-    { name: 'Host a party', completed: true },
-    { name: 'Visit: A safari park, a carnival, a fort, a theme park, a farm, an aquarium, the countryside, another country, a capitol city', completed: true },
-    { name: 'Learn to bake a cake', completed: true },
-    { name: 'Hide a treasure and leave a map for friends to find', completed: true },
-    { name: 'Learn how to ask someone out (and how to dump them)', completed: true },
-    { name: 'Start your own blog', completed: true },
-    { name: 'Write lyrics for a song', completed: true },
-    { name: 'Make a time capsule', completed: true },
-    { name: 'Be a genius', completed: true },
-    { name: 'Take care of an animal', completed: true },
-    { name: 'Learn to like (or at least try): broccoli, shellfish, lettuce, brussel sprouts, carrots, smelly cheese, coconut, peas', completed: true },
-    { name: 'April Fool someone', completed: true },
-    { name: 'Do something charitable', completed: true },
-    { name: 'Teach you grandparents something new', completed: true },
-    { name: 'Invent a new game', completed: true },
-    { name: 'Go as fast as you can', completed: true },
-    { name: 'Make your own buttons', completed: true },
-    { name: 'Watch these films: attach link to other post', completed: true },
-    { name: 'Read these books: attach link here', completed: true },
-    { name: 'Pretend to be ill convincingly', completed: true },
-    { name: 'Save your allowance (or paycheck) for a month and spend it all at once', completed: true },
-    { name: 'Learn to swim', completed: true },
-    { name: 'Succeed at something you’re bad at', completed: true },
-    { name: 'Be a daredevil', completed: true },
-    { name: 'Invent a new trend', completed: true },
-    { name: 'Know who your friends are', completed: true },
-    { name: 'Plant a Tree (to climb when you’re older)', completed: true },
-    { name: 'Start a band', completed: true },
-    { name: 'Camp out in the back yard', completed: true },
-    { name: 'Learn to live without something you love for a week', completed: true },
-    { name: 'Join a club', completed: true },
-    { name: 'Cook a meal', completed: true },
-    { name: 'List the things your parents said they’d tell you when you’re older', completed: true },
-    { name: 'Make your bike look cool', completed: true },
-    { name: 'Learn to juggle', completed: true },
-    { name: 'Have a snowball fight', completed: true },
-    { name: 'Build the ultimate sandcastle', completed: true },
-    { name: 'Take part in a TV show', completed: true },
-    { name: 'Make a scene in a public place', completed: true },
-    { name: 'Spend Christmas in another country', completed: true },
-    { name: 'Do something nice without being asked', completed: true },
-    { name: 'See your music idol perform live', completed: true },
-    { name: 'Have a sleepover', completed: true },
-    { name: 'Become a spy', completed: true },
-    { name: 'Watch a tadpole grow to a frog', completed: true },
-    { name: 'Learn to say useful phrases in other languages', completed: true },
-    { name: 'Make your own greeting cards', completed: true },
-    { name: 'Hold a garage sale', completed: true },
-    { name: 'Build an igloo', completed: true },
-    { name: 'Start your own secret society', completed: true },
-    { name: 'Research your family tree', completed: true },
-    { name: 'Learn to skip stones', completed: true },
-    { name: 'Dye your hair', completed: true },
-    { name: 'Lobby your local representative', completed: true },
-    { name: 'Write a story and get it published', completed: true },
-    { name: 'Sing in front of an audience', completed: true },
-    { name: 'Learn to use long words (and drop them in everyday conversation)', completed: true },
-    { name: 'Blame someone else', completed: true },
-    { name: 'Learn to stick up for yourself', completed: true },
-    { name: 'Get from A to B using a map', completed: true },
-    { name: 'Send a Valentine', completed: true },
-    { name: 'Have your own plot in a garden', completed: true },
-    { name: 'Build your own website', completed: true },
-    { name: 'See your name in print', completed: true },
-    { name: 'Make a unique milkshake', completed: true },
-    { name: 'Glue coins to the floor (and trick people in to trying to pick them up)', completed: true },
-    { name: 'Learn to take great photos', completed: true },
-    { name: 'Drive something', completed: true },
-    { name: 'Be vegetarian for a week', completed: true },
-    { name: 'Meet someone famous', completed: true },
-    { name: 'Decide what you want to be when you grow up', completed: true },
+    { name: 'Keep a dream diary', completed: false },
+    { name: 'Touch these creatures: Mouse, butterfly, worm, bird, spider, snake, frog, fish, bug', completed: false },
+    { name: 'Prepare yourself for fame', completed: false },
+    { name: 'Learn to play an instrument', completed: false },
+    { name: 'Play a computer game to the end', completed: false },
+    { name: 'Have an embarrassing moment and get over it', completed: false },
+    { name: 'Get your school involved in a world record attempt', completed: false },
+    { name: 'Paint a picture good enough to hang on a wall', completed: false },
+    { name: 'Learn to whistle', completed: false },
+    { name: 'See a ghost', completed: false },
+    { name: 'Fart and Burp in hilariously inappropriate places', completed: false },
+    { name: 'Make a swear box', completed: false },
+    { name: 'Act in a play', completed: false },
+    { name: 'Win Something', completed: false },
+    { name: 'Make a t-shirt', completed: false },
+    { name: 'Stay up all night', completed: false },
+    { name: 'Sleep all day', completed: false },
+    { name: 'Invent a secret code', completed: false },
+    { name: 'Learn to do a card trick', completed: false },
+    { name: 'Grow something from a seed', completed: false },
+    { name: 'Start a collection', completed: false },
+    { name: 'Help save the planet', completed: false },
+    { name: 'Turn back time', completed: false },
+    { name: 'Learn to do a party trick', completed: false },
+    { name: 'Climb to the top of a mountain', completed: false },
+    { name: 'Make a one-minute movie', completed: false },
+    { name: 'Host a party', completed: false },
+    { name: 'Visit: A safari park, a carnival, a fort, a theme park, a farm, an aquarium, the countryside, another country, a capitol city', completed: false },
+    { name: 'Learn to bake a cake', completed: false },
+    { name: 'Hide a treasure and leave a map for friends to find', completed: false },
+    { name: 'Learn how to ask someone out (and how to dump them)', completed: false },
+    { name: 'Start your own blog', completed: false },
+    { name: 'Write lyrics for a song', completed: false },
+    { name: 'Make a time capsule', completed: false },
+    { name: 'Be a genius', completed: false },
+    { name: 'Take care of an animal', completed: false },
+    { name: 'Learn to like (or at least try): broccoli, shellfish, lettuce, brussel sprouts, carrots, smelly cheese, coconut, peas', completed: false },
+    { name: 'April Fool someone', completed: false },
+    { name: 'Do something charitable', completed: false },
+    { name: 'Teach you grandparents something new', completed: false },
+    { name: 'Invent a new game', completed: false },
+    { name: 'Go as fast as you can', completed: false },
+    { name: 'Make your own buttons', completed: false },
+    { name: 'Watch these films: attach link to other post', completed: false },
+    { name: 'Read these books: attach link here', completed: false },
+    { name: 'Pretend to be ill convincingly', completed: false },
+    { name: 'Save your allowance (or paycheck) for a month and spend it all at once', completed: false },
+    { name: 'Learn to swim', completed: false },
+    { name: 'Succeed at something you’re bad at', completed: false },
+    { name: 'Be a daredevil', completed: false },
+    { name: 'Invent a new trend', completed: false },
+    { name: 'Know who your friends are', completed: false },
+    { name: 'Plant a Tree (to climb when you’re older)', completed: false },
+    { name: 'Start a band', completed: false },
+    { name: 'Camp out in the back yard', completed: false },
+    { name: 'Learn to live without something you love for a week', completed: false },
+    { name: 'Join a club', completed: false },
+    { name: 'Cook a meal', completed: false },
+    { name: 'List the things your parents said they’d tell you when you’re older', completed: false },
+    { name: 'Make your bike look cool', completed: false },
+    { name: 'Learn to juggle', completed: false },
+    { name: 'Have a snowball fight', completed: false },
+    { name: 'Build the ultimate sandcastle', completed: false },
+    { name: 'Take part in a TV show', completed: false },
+    { name: 'Make a scene in a public place', completed: false },
+    { name: 'Spend Christmas in another country', completed: false },
+    { name: 'Do something nice without being asked', completed: false },
+    { name: 'See your music idol perform live', completed: false },
+    { name: 'Have a sleepover', completed: false },
+    { name: 'Become a spy', completed: false },
+    { name: 'Watch a tadpole grow to a frog', completed: false },
+    { name: 'Learn to say useful phrases in other languages', completed: false },
+    { name: 'Make your own greeting cards', completed: false },
+    { name: 'Hold a garage sale', completed: false },
+    { name: 'Build an igloo', completed: false },
+    { name: 'Start your own secret society', completed: false },
+    { name: 'Research your family tree', completed: false },
+    { name: 'Learn to skip stones', completed: false },
+    { name: 'Dye your hair', completed: false },
+    { name: 'Lobby your local representative', completed: false },
+    { name: 'Write a story and get it published', completed: false },
+    { name: 'Sing in front of an audience', completed: false },
+    { name: 'Learn to use long words (and drop them in everyday conversation)', completed: false },
+    { name: 'Blame someone else', completed: false },
+    { name: 'Learn to stick up for yourself', completed: false },
+    { name: 'Get from A to B using a map', completed: false },
+    { name: 'Send a Valentine', completed: false },
+    { name: 'Have your own plot in a garden', completed: false },
+    { name: 'Build your own website', completed: false },
+    { name: 'See your name in print', completed: false },
+    { name: 'Make a unique milkshake', completed: false },
+    { name: 'Glue coins to the floor (and trick people in to trying to pick them up)', completed: false },
+    { name: 'Learn to take great photos', completed: false },
+    { name: 'Drive something', completed: false },
+    { name: 'Be vegetarian for a week', completed: false },
+    { name: 'Meet someone famous', completed: false },
+    { name: 'Decide what you want to be when you grow up', completed: false },
   ];
+
+const listElement = document.querySelector ('.js-list');
+const textElement = document.querySelector(".js-text");
 
 function paintTasks(){
   let html = ""; //variable que contiene los li
@@ -139,7 +140,7 @@ function paintTasks(){
     //Se pinta en tres líneas por mejor visualización, pero puede ir perfectamente en una sola.
     html += `<li class="${className}">`
     html += `<input class="js-checkbox" type="checkbox" value="${i}" ${checked}/>`
-    html += `${task.name}</li>`
+    html += `  ${task.name}</li>`
   }
   listElement.innerHTML = html;
   listenClick();
@@ -157,11 +158,22 @@ function handlerCheck(event){
 console.log(event.target.value);
 const clicked = event.target.value;
 tasks[clicked].completed = !tasks[clicked].completed;//Le pone el valor contrario a lo que tiene. Solo sirve para booleanos
-//Volver a pintar:
-paintTasks();
 
+for(let i = 0; i < clicked.length; i++){
+  const results = `Tienes ${tasks.length} tareas. ${clicked.length} completadas y ${clicked.length} por realizar`;
+textElement.innerHTML = `<p>${results}</p>`;
+}
+paintTasks();
+refreshNumbers();
 }
 
-
-
 paintTasks();
+
+function refreshNumbers() {
+  const total = tasks.length;
+  const completed = document.querySelectorAll('.completed-task').length;
+  const left = total - completed;
+  const results = `Tienes ${total} tareas. ${completed} completadas y ${left} por realizar`;
+  textElement.innerHTML = `<p>${results}</p>`;
+}
+  
