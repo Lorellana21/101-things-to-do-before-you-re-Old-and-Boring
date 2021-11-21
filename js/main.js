@@ -1,15 +1,4 @@
 'use strict';
-/*
-Proceso 1:
-1- Cuando arranque la página pinto el listado de tareas.
-2- Escuchar un evento sobre las tareas pintadas
-Proceso 2:
-1. Una vez que la usuaria ha clicado:
-- recoger en qué elemento ha hecho click
-- modificar datos (estado de la tarea)
-- volver a pintar mis tareas
-- escuchar evento
-*/
 
 const tasks = [
     { name: 'Send a message in a bottle', completed: false },
