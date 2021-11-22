@@ -50,7 +50,9 @@ The book's title says it all.📕
 
 ![](https://images-na.ssl-images-amazon.com/images/I/4109V59AF+L.jpg)
 
-Certain things in life are guaranteed. Firstly, we will get old, and secondly, without realising it, we´ll propably become borring too. Surely you´ve noticed how much time old people happily spend talking about when they wer young? Well, this book offers a way to ensure that you also have hundreds of great memories to sustain you and plenty to talk about when you become old and boring. If you don´t do these things now, the chances are you never will. So best get going before it´s too late.👅
+Certain things in life are guaranteed. Firstly, we will get old, and secondly, without realising it, we´ll propably become boring too. Surely you´ve noticed how much time old people happily spend talking about when they were young? Well, this book offers a way to ensure that you also have hundreds of great memories to sustain you and plenty to talk about when you become old and boring. 
+
+If you don´t do these things now, the chances are you never will. So best get going before it´s too late.👅
 
 
 
