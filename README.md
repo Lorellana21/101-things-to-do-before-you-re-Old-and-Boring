@@ -50,7 +50,7 @@ The book's title says it all.📕
 
 ![](https://images-na.ssl-images-amazon.com/images/I/4109V59AF+L.jpg)
 
-There is nothing worse than being boring, apart from being old and boring. So what are you waiting for? 👅 
+Certain things in life are guaranteed. Firstly, we will get old, and secondly, without realising it, we´ll propably become borring too. Surely you´ve noticed how much time old people happily spend talking about when they wer young? Well, this book offers a way to ensure that you also have hundreds of great memories to sustain you and plenty to talk about when you become old and boring. If you don´t do these things now, the chances are you never will. So best get going before it´s too late.👅
 
-Here are 101 Things to Do to keep you busy at the weekend, in the holidays or if you are just bored.😎
+
 
